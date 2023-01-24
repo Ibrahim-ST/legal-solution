@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Solutions</title>
+    <link rel="icon" type="image/x-icon" href="/images/Group-10.png">
+    <!-- google fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins&display=swap"
+        rel="stylesheet">
+    <!-- flowbite  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css" rel="stylesheet" />
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/67c029cf3c.js" crossorigin="anonymous"></script>
+    <!-- Tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B68C5A',
+                        secondary: '#414040',
+                        tertiary: '#707070',
+                    },
+                    fontFamily: {
+                        garamond: ["EB Garamond", "serif"],
+                        poppins: ["Poppins", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'banner': "linear-gradient(to right bottom, #111111 0%, rgba(17, 17, 17, 0) 100%), url('./images/rectangle.png')",
+                        'card': "linear-gradient(to right bottom, #F3F3F3  , rgba(243, 243, 243, 0) )",
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- header section  -->
+    <header>
+        <!-- navbar section  -->
+
+        <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full top-0 left-0 z-40">
+            <div class="max-w-6xl flex flex-wrap items-center justify-between mx-auto">
+                <a href="" class="flex items-center">
+                    <img src="./images/Group-2.png" class="h-6 mr-3 sm:h-9" alt="Legal sol Logo">
+                </a>
+                <div class="flex md:order-2">
+                    <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" type="button"
+                        class="text-white bg-primary hover:bg-tertiary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Free
+                        Consultation</button>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-white bg-primary rounded md:bg-transparent md:text-primary md:p-0 text-base"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-tertiary rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 text-base">Services</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-tertiary rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 text-base">Cases</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-tertiary rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 text-base">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact-us"
+                                class="block py-2 pl-3 pr-4 text-tertiary rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 text-base">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main modal -->
+        <div id="defaultModal" tabindex="-1" aria-hidden="true"
+            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+            <div class="relative w-full h-full max-w-2xl md:h-auto">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow  ">
+                    <!-- Modal header -->
+                    <div class="flex items-start justify-between p-4 border-b rounded-t ">
+                        <h3 class="text-xl font-semibold text-secondary text-red-600 uppercase text-center">
+                            Disclaimer
+                        </h3>
+                        <button type="button"
+                            class="text-secondary  hover:bg-primary hover:text-white rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
+                            data-modal-hide="defaultModal">
+                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-6 space-y-6"> 
+                        <p class="text-base leading-relaxed text-secondary">
+                            As per the rules of the Bar Council of Bangladesh, law firms are not permitted to solicit work and advertise. By clicking the “Agree” button and accessing this website the user fully accepts that you are seeking information of your own accord and volition and that no form of solicitation has taken place by the Firm or its members.
+                        </p>
+                        <p class="text-base leading-relaxed text-secondary">
+                            The information provided under this website is solely available at your request for information purposes only. It should not be interpreted as soliciting or advertisement. The firm is not liable for any consequence of any action taken by the user relying on material/information provided under this website. In cases where the user has any legal issues, he/she in all cases must seek independent legal advice.
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div
+                        class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b ">
+                        <button data-modal-hide="defaultModal" type="button"
+                            class="text-white bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">I
+                            accept</button>
+                        <button data-modal-hide="defaultModal" type="button"
+                            class="text-black bg-slate-300  hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">Decline</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- nav section ends  -->
+
+        <!-- banner section start  -->
+        <section class="max-w-6xl mx-auto h-screen pt-28 mb-14 overflow-hidden">
+            <div class="h-full bg-no-repeat w-full bg-banner bg-cover rounded-lg ">
+                <div class="flex flex-col justify-center items-center text-white h-full w-full">
+                    <h1 class="font-garamond text-5xl md:text-7xl text-center">We Provide Effective <br> Legal Solutions
+                    </h1>
+                    <p class="py-7 w-2/3 md:w-1/2">Legal Solutions is a dynamic law firm with a clear vision of the future. We are a firm that understands what clients need today and, equally importantly, what they will need tomorrow.</p>
+
+                    <div class="flex justify-center w-1/2">
+                        <input type="text" class="form-control rounded-lg w-full flex-shrink-0 mx-5"
+                            placeholder="Search your services">
+                        <button type="button"
+                            class="text-white bg-primary hover:bg-tertiary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner section end  -->
+
+    </header>
+    <main>
+        <!-- Practice area section start -->
+        <section class="max-w-6xl mx-auto my-28 py-10">
+            <div class="text-center">
+                <h1 class="font-garamond text-4xl text-secondary">The Legal Practice Area</h1>
+                <p class="font-poppins text-tertiary py-6 px-2 md:w-1/2 mx-auto">From corporate law to human rights law, find out about different practice areas and what skills you need to succeed in each one.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div class="text-center flex flex-col justify-center items-center gap-5 md:h-[450px] border-b px-2">
+                    <img src="./images/Group-10.png" alt="">
+                    <h1 class="font-garamond text-3xl text-secondary">Business Law</h1>
+                    <p class="font-poppins">Business law, also called commercial or mercantile law, the body of rules, whether by convention, agreement, or international legislation, governing the dealings between persons in commercial matters.</p>
+                    <img src="./images/Frame.png" alt="">
+                </div>
+                <div
+                    class="text-center flex flex-col justify-center items-center gap-5 md:h-[450px] bg-card border px-2">
+                    <img src="./images/Group-15.png" alt="">
+                    <h1 class="font-garamond text-3xl text-secondary ">Criminal Law</h1>
+                    <p class="font-poppins">Criminal law is the body of law that relates to crime. It prescribes conduct perceived as threatening, harmful, or otherwise endangering to the property, health, safety, and moral welfare . </p>
+                    <img src="./images/Frame.png" alt="">
+                </div>
+                <div class="text-center flex flex-col justify-center items-center gap-5 md:h-[450px] border-b px-2">
+                    <img src="./images/layer1.png" alt="">
+                    <h1 class="font-garamond text-3xl text-secondary">Child Support</h1>
+                    <p class="font-poppins">When a court orders a parent to pay child support, the parent must pay directly to the child's custodian rather than directly to the child. Trial courts determine the amount of periodic installments for the parent to pay.</p>
+                    <img src="./images/Frame.png" alt="">
+                </div>
+                <div class="text-center flex flex-col justify-center items-center gap-5 md:h-[450px] px-2">
+                    <img src="./images/Group-12.png" alt="">
+                    <h1 class="font-garamond text-3xl text-secondary">Education Law</h1>
+                    <p class="font-poppins">Education law is a set of rules and regulations that guide the workings of an education system. Many regions have detailed educational law systems, in order to create comprehensive educational policies.</p>
+                    <img src="./images/Frame.png" alt="">
+                </div>
+                <div
+                    class="text-center flex flex-col justify-center items-center gap-5 md:h-[450px] border-r border-l px-2">
+                    <img src="./images/Group-16.png" alt="">
+                    <h1 class="font-garamond text-3xl text-secondary">Divorce Law</h1>
+                    <p class="font-poppins">We provide full service in relation to a broad range of aviation matters, including, protecting, perfecting and enforcing ownership or security interests in aircrafts, cross border aircraft purchase.</p>
+                    <img src="./images/Frame.png" alt="">
+                </div>
+                <div class="text-center flex flex-col justify-center items-center gap-5 md:h-[450px] px-2">
+                    <img src="./images/Group-13.png" alt="">
+                    <h1 class="font-garamond text-3xl text-secondary">Tax Law</h1>
+                    <p class="font-poppins">Tax law, body of rules under which a public authority has a claim on taxpayers, requiring them to transfer to the authority part of their income or property.
+                    The power to impose taxes is generally recognized as a govt right.
+                    </p>
+                    <img src="./images/Frame.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Practice area section end -->
+
+        <!-- clients review section start -->
+
+        <section class="max-w-6xl mx-auto ">
+            <div>
+                <h1 class="text-center font-garamond text-4xl text-secondary">What Our Client Say</h1>
+                <p class="font-poppins text-tertiary py-6 px-2 md:w-1/2 mx-auto">While working on the project, we always focus on the goals our customers want to achieve with the products we help them develop. Below are some of our esteemed clients whom we have worked with.</p>
+            </div>
+
+            <!--  carousel  -->
+            <div class="my-10 h-[500px]">
+
+                <div id="indicators-carousel" class="relative" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-96 overflow-hidden rounded-lg md:h-[500px] ">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+
+                            <img src="./images/Rectangle.png"
+                                class="absolute block h-full md:p-0 w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-50"
+                                alt="...">
+                            <div class="absolute text-center h-full text-white">
+                                <div class="flex flex-col h-full justify-center items-center gap-3">
+                                    <img class="text-center h-24 w-24 border-2 border-white rounded-full "
+                                        src="./images/ibrahim.jpg" alt="">
+                                    <h5 class="text-2xl font-garamond">Ibrahim Siddiquee</h5>
+                                    <p class="font-poppins">Software Engineer</p>
+                                    <p class="font-poppins text-xs w-3/4 text-gray-300">
+                                        My new website is everything that I wanted. I've already recommended you to another company. What I loved about Thrive was the fact that they started with a plan and executed it. They took the time to get to know my business before starting the build process which saved me time.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./images/Rectangle.png"
+                                class="absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-50"
+                                alt="...">
+                            <div class="absolute text-center h-full text-white">
+                                <div class="flex flex-col h-full justify-center items-center gap-3">
+                                    <img class="text-center h-24 w-24 border-2 border-white rounded-full"
+                                        src="./images/ibrahim.jpg" alt="">
+                                    <h5 class="text-2xl font-garamond">Ibrahim Siddiquee</h5>
+                                    <p class="font-poppins">Embedded Software Engnieer</p>
+                                    <p class="font-poppins w-3/4 text-xs text-gray-300">The attention to detail with Thrive's professional staff is incredible. The entire team has proven to be very innovative and will work with ideas that I have as well and think of new ways to bring more traffic to our site in ways I would never have considered. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./images/Rectangle.png"
+                                class="absolute block h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-50"
+                                alt="...">
+                            <div class="absolute text-center h-full text-white">
+                                <div class="flex flex-col h-full justify-center items-center gap-3">
+                                    <img class="text-center h-24 w-24 border-2 border-white rounded-full"
+                                        src="./images/ibrahim.jpg" alt="">
+                                    <h5 class="text-2xl font-garamond">Ibrahim Siddiquee</h5>
+                                    <p class="font-poppins">Ux/UI Designer</p>
+                                    <p class="font-poppins w-3/4 text-xs text-gray-300">
+                                        Thrive is a great company to work with, I use them for a lot more than just building a website. It's almost as if they are an employee. Thrive is a company you can really trust. They handle my PHP development work, web design, web hosting and search engine optimization.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                        <button type="button" class="w-4 h-1 " aria-current="true" aria-label="Slide 1"
+                            data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-4 h-1 " aria-current="false" aria-label="Slide 2"
+                            data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-4 h-1 " aria-current="false" aria-label="Slide 3"
+                            data-carousel-slide-to="2"></button>
+
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button"
+                        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-prev>
+                        <span
+                            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-next>
+                        <span
+                            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        <!-- clients review section end -->
+
+        <!-- FAQ section start -->
+        <section class="max-w-6xl mx-auto ">
+            <div class="py-20">
+                <div>
+                    <h1 class="text-center font-garamond text-4xl text-secondary">Frequently Asked Any Questions</h1>
+                    <p class="font-poppins text-tertiary py-6 px-2 md:w-1/2 mx-auto">
+                        Below you will find answers to the questions we get asked the most about applying for web development.
+                    </p>
+                </div>
+                <div class="grid  md:grid-cols-2 gap-8">
+                    <div>
+
+                        <div id="accordion-collapse" data-accordion="collapse">
+                            <!-- item 1  -->
+                            <h2 id="accordion-collapse-heading-1">
+                                <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-secondary border border-b-0 border-gray-200 rounded "
+                                    data-accordion-target="#accordion-collapse-body-1" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-1">
+                                    <span>1. What is the difference between FlexBox and Grid?</span>
+                                    <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+
+
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-1" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-1">
+                                <div class="p-5 border border-b-0 border-gray-200">
+                                    <p class="mb-2 text-tertiary">The basic difference between CSS Grid Layout and CSS
+                                        Flexbox Layout is that flexbox was designed for layout in one dimension - either
+                                        a row or a column. Grid was designed for two-dimensional layout - rows, and
+                                        columns at the same time. The two specifications share some common features,
+                                        however, and if you have already learned how to use flexbox, the similarities
+                                        should help you get to grips with Grid.</p>
+
+                                </div>
+                            </div>
+                            <!-- item 2 -->
+                            <h2 id="accordion-collapse-heading-2">
+                                <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-secondary border border-b-0 border-gray-200  hover:bg-gray-100 "
+                                    data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-2">
+                                    <span>2. What is the purpose of Media Query?</span>
+                                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-2" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-2">
+                                <div class="p-5 font-light border border-b-0 border-gray-200 ">
+                                    <p class="mb-2 text-tertiary">Media queries are a key part of responsive web design,
+                                        as they allow you to create different layouts depending on the size of the
+                                        viewport, often used for responsive design using breakpoints. But they can also
+                                        be used to detect other things about the environment your site is running on,
+                                        for example whether the user is using a touchscreen rather than a mouse.</p>
+                                </div>
+                            </div>
+                            <!-- item 3 -->
+                            <h2 id="accordion-collapse-heading-3">
+                                <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-secondary border border-gray-200   hover:bg-gray-100  "
+                                    data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-3">
+                                    <span>3. What is CSS Box Model and how does it work?</span>
+                                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-3" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-3">
+                                <div class="p-5 font-light border border-t-0 border-gray-200 ">
+                                    <p class="mb-2 text-tertiary">
+                                        A box in CSS consists of a content area, which is where any text, images, or
+                                        other HTML elements are displayed. This is optionally surrounded by padding, a
+                                        border, and a margin, on one or more sides. The box model describes how these
+                                        elements work together to create a box as displayed by CSS. </p>
+
+                                </div>
+                            </div>
+                            <!-- item 4 -->
+                            <h2 id="accordion-collapse-heading-4">
+                                <button type="button"
+                                    class="flex items-center justify-between w-full p-5 font-medium text-left text-secondary border border-gray-200 hover:bg-gray-100  "
+                                    data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-4">
+                                    <span>4. What are the Semantic tags? And what's the purpose of semantic tags?</span>
+                                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-4" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-4">
+                                <div class="p-5 font-light border border-t-0 border-gray-200 ">
+                                    <p class="mb-2 text-tertiary">Semantic HTML tags are tags that define the meaning of
+                                        the content they contain.
+
+                                        For example, tags like header, article, and footer are semantic HTML tags. They
+                                        clearly indicate the role of the content they contain.
+
+                                        On the other hand, tags like div and span are typical examples of non-semantic
+                                        HTML elements. They serve only as content holders but give no indication as to
+                                        what type of content they contain or what role that content plays on the page..
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="px-6">
+                        <img src="./images/Framee.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- FAQ section ends  -->
+
+        <!-- Contact us section start -->
+
+        <section class="max-w-6xl mx-auto " id="contact-us">
+            <div class="py-20">
+                <div>
+                    <h1 class=" text-center font-garamond text-4xl text-secondary">Contact With Us</h1>
+                    <p class="font-poppins text-tertiary py-6 px-2 md:w-1/2 mx-auto">You're not going to hit a ridiculously long phone menu when you call us. Your email isn't going to the inbox abyss, never to be seen or heard from again. At Legal solution, we provide the exceptional service and communication we'd want to experience ourselves!
+
+
+                    </p>
+                </div>
+                <!-- form and address  -->
+                <div class="md:grid md:grid-cols-2 gap-6 my-4 px-5">
+                    <!-- address  -->
+                    <div class="md:grid md:grid-cols-2 ">
+                        <div
+                            class="flex flex-col justify-center items-center bg-gray-50 border-r border-b text-center gap-4 py-5">
+                            <img src="./images/location.png" alt="">
+                            <h1 class="text-secondary font-garamond">Address</h1>
+                            <p class="text-tertiary">771/A, Noorbag R/A, <br> O.R. Nizam Road, Chittagong.</p>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center items-center bg-gray-50 border-b text-center gap-4 py-5">
+                            <img src="./images/call.png" alt="">
+                            <h1 class="text-secondary font-garamond">Call Us</h1>
+                            <p class="text-tertiary">+8801836-406502</p>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center items-center bg-gray-50 border-r text-center gap-4 py-5">
+                            <img src="./images/email.png" alt="">
+                            <h1 class="text-secondary font-garamond">Email Us</h1>
+                            <p class="text-tertiary text-base px-5">ibrahim.siddiqueee@gmail.com</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center bg-gray-50 text-center gap-4 py-5">
+                            <img src="./images/time.png" alt="">
+                            <h1 class="text-secondary font-garamond">Working Hours</h1>
+                            <p class="text-tertiary">Mon-Fri: 9AM to 5PM <br>
+                                Sunday: 9AM to 1 PM</p>
+                        </div>
+
+                    </div>
+                    <!-- contact form  -->
+                    <form>
+                        <div class="mb-6">
+                            <input type="text"
+                                class="bg-gray-50 border border-gray-300 text-tertiary text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5  "
+                                placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-6">
+                            <input type="email"
+                                class="bg-gray-50 border border-gray-300 text-tertiary text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5  "
+                                placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-6">
+                            <input type="text"
+                                class="bg-gray-50 border border-gray-300 text-tertiary text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5  "
+                                placeholder="Subject" required>
+                        </div>
+                        <div class="mb-6">
+                            <textarea rows="4"
+                                class="block p-2.5 w-full text-sm text-tertiary bg-gray-50 rounded-lg border border-gray-300 focus:ring-primray focus:border-primary "
+                                placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="button"
+                            class="text-white w-full bg-primary hover:bg-tertiary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Send
+                            Message</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <!-- Contact us section end -->
+
+    </main>
+
+    <footer class="bg-black py-32">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 text-center md:text-left md:grid-cols-4 gap-5 px-5">
+            <div>
+                <img src="./images/Group-37.png" alt="">
+                <p class="py-8 text-neutral-300">Legal Solutions has been established with a view to provide high-quality legal services based upon professional expertise, commitment, experience and an ever expanding knowledge base</p>
+            </div>
+            <div>
+                <h1 class="text-white font-garamond text-2xl mb-11">Useful Links</h1>
+                <ul class="text-neutral-300 flex flex-col gap-3">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Cases</li>
+                    <li>Blogs</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="text-white font-garamond text-2xl mb-11">Contact Now</h1>
+                <div>
+                    <p class="text-neutral-300">771/A, Noorbag R/A, <br> O.R. Nizam Road, Chittagong.</p>
+                </div>
+                <div class="text-neutral-300 my-5">
+                    <p>+8801836-406502</p>
+                    <p>+8801516-174718</p>
+                </div>
+                <div class="text-neutral-300">
+                    <p>ibrahim.siddiqueee@gmail.com</p>
+                    <p>ibrahim.s.tanvir@gmail.com</p>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-white font-garamond text-2xl mb-11">Subscribe</h1>
+                <div class="text-neutral-300 pb-5">
+                    <p>Subscribe for our latest & Articles.</p>
+                    <p>We Won't Give You Spam Mails.</p>
+                </div>
+                <div class="flex text-neutral-300 px-4 md:p-0">
+                    <input type="text"
+                        class="bg-gray-50 border text-black  border-gray-300  text-sm rounded-l-lg focus:ring-primary focus:border-primary block w-full p-2.5  "
+                        placeholder="Email Address" required>
+                    <button type="button"
+                        class="text-white bg-primary hover:bg-tertiary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0  -ml-2"><i
+                            class="fa-sharp fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+</body>
+
+</html>
